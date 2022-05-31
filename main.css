@@ -48,7 +48,7 @@
 }
 
 .glitch .glitch__item {
-  background: url("../images/codetrails_logo.png") no-repeat 50% 50% / contain;
+  background: url("./images/codetrails_logo.png") no-repeat 50% 50% / contain;
   height: 20vh;
   width: 50vw;
   top: 15%;
