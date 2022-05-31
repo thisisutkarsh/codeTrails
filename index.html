@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ACM Code Trails for murious 15.0">
+    <link rel="icon" href="./favicons/favicon.ico" type="image/gif">
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> -->
+
+    <title>ACM Code Trails</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <div class="align">
+                <ul class="nav-list">
+                    <!-- <li> <a href="#home" class="nav-link">Home</a></li> -->
+                    <li> <a href="#signup" class="nav-link">Sign Up</a></li>
+                    <li><a href="#instruction" class="nav-link">Instruction</a></li>
+
+                    <li class="centering"><a href="#home"><img src="./images/acm-white-logo.png"
+                                style="height: 5em;"></a>
+                    </li>
+                    <li><a href="#login" class="nav-link">Log In</a></li>
+                    <!-- <li><a href="#about" class="nav-link">About</a></li> -->
+                    <li><a href="#leader" class="nav-link">Leaderboard</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile view  begin -->
+            <div class="mobile">
+                <nav class="mobile-bottom-nav">
+                    <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+                        <div class="mobile-bottom-nav__item-content">
+                            <a href="#home">
+                                <i class="material-icons">home</i>
+                                Home
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-bottom-nav__item">
+                        <div class="mobile-bottom-nav__item-content">
+                            <a href="#signup">
+                                <!-- <i class="material-icons">person_add_alt</i> -->
+                                <span class="material-icons">
+                                    person_add_alt
+                                </span>
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-bottom-nav__item">
+                        <div class="mobile-bottom-nav__item-content">
+                            <a href="#instruction">
+                                <i class="material-icons">help</i>
+                                Instruction
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-bottom-nav__item">
+                        <div class="mobile-bottom-nav__item-content">
+                            <a href="#login">
+                                <i class="material-icons">person</i>
+                                Log In
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-bottom-nav__item">
+                        <div class="mobile-bottom-nav__item-content">
+                            <a href="#leader">
+                                <i class="material-icons">leaderboard</i>
+                                Leaderboard
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile view end -->
+
+        </header>
+    </div>
+
+    <main>
+        <div class="main-image">
+
+            <div class="glitch">
+                <div class="glitch__item"></div>
+                <div class="glitch__item"></div>
+                <div class="glitch__item"></div>
+                <div class="glitch__item"></div>
+                <div class="glitch__item"></div>
+
+            </div>
+            <img class="img-responsive" src="./images/codetrails_logo.png" alt="codetrails">
+
+            <!-- Animation first begin -->
+            <div id="object"></div>
+            <!-- Animation second -->
+
+
+            <!-- Animation-2  begin-->
+            <section class="animations">
+                <div class="animations-container">
+                    <!-- <div class="ani ani-5">
+                        <div class="moving-square-frame"></div>
+                        <div class="ani-moving-square"></div>
+                    </div> -->
+
+                    <div class="ani ani-6"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024">
+                            <path id="followPath"
+                                d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
+                            </path>
+                            <path id="dashedPath"
+                                d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
+                            </path>
+                            <path id="airplain" d="M8.04 84L92 48 8.04 12 8 40l60 8-60 8z">
+                                <animateMotion xlink:href="#airplain" dur="6s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#followPath"></mpath>
+                                </animateMotion>
+                            </path>
+                        </svg></div>
+
+                    <div class="ani ani-6 ani-6-pos"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024">
+                            <path id="followNewPath"
+                                d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
+                            </path>
+                            <path id="dashedPath"
+                                d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
+                            </path>
+                            <path id="newAirplain" d="M8.04 84L92 48 8.04 12 8 40l60 8-60 8z">
+                                <animateMotion xlink:href="#newAirplain" dur="6s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#followNewPath"></mpath>
+                                </animateMotion>
+                            </path>
+                        </svg></div>
+
+                </div>
+            </section>
+
+            <!-- Animation-2 end -->
+    </main>
+
+    <footer>
+        <h3>
+            Made with ❤ by Utkarsh
+        </h3>
+    </footer>
+    <!-- <script src="./script/animation.js"></script> -->
+</body>
+
+</html>
